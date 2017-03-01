@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.javierdavidleonhernandez.akustilator"
+    android:installLocation="preferExternal">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/pp"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".SplashScreen"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".C_Sabine" />
+        <activity android:name=".ListaCalculos" />
+        <activity android:name=".Acustica" />
+        <activity android:name=".TiempoReverberacion" />
+        <activity android:name=".C_Basicos"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_c__basicos"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.javierdavidleonhernandez.akustilator.C_Basicos">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"><![CDATA[>
+
+
+        ]]>
+
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="259dp"
+                app:srcCompat="@mipmap/triangulo1"
+                android:id="@+id/imageView2" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Velocidad (C)"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_Velocidad_C"
+                android:layout_weight="1"
+                android:textAlignment="center" />
+
+            <TextView
+                android:text="Frecuencia (f)"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_Frecuencia_F"
+                android:layout_weight="1"
+                android:textAlignment="center" />
+
+            <TextView
+                android:text="Longitud (λ)"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_longitud_λ"
+                android:layout_weight="1"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="[m/s]"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_ms"
+                android:layout_weight="1"
+                android:textAlignment="center" />
+
+            <TextView
+                android:text="[Hertz]"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_Hertz"
+                android:layout_weight="1"
+                android:textAlignment="center" />
+
+            <TextView
+                android:text="[m]"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_metros"
+                android:layout_weight="1"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:id="@+id/et_velocidad"
+                android:layout_weight="1"
+                android:inputType="number|numberSigned|numberDecimal"
+                android:textAlignment="center"
+                android:background="@color/primary_light" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:id="@+id/et_frecuencia"
+                android:layout_weight="1"
+                android:inputType="number|numberSigned|numberDecimal"
+                android:textAlignment="center"
+                android:background="@color/primary_light" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:id="@+id/et_longitud_λ"
+                android:layout_weight="1"
+                android:inputType="number|numberSigned|numberDecimal"
+                android:textAlignment="center"
+                android:background="@color/primary_light" />
+
+        </LinearLayout>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/formulasbasicas" />
+
+        <Button
+            android:text="Calcular"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:id="@+id/bt_calcular" />
+
+    </LinearLayout>
+
+</RelativeLayout>
